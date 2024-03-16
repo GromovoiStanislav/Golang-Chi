@@ -1,0 +1,24 @@
+@api = http://localhost:3000
+
+
+
+### healthcheck
+GET {{api}}/healthcheck
+Cache-Control: no-cache
+
+
+### Get all todos
+GET {{api}}/todos
+Cache-Control: no-cache
+
+
+### Create a new todos
+POST {{api}}/todos
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "title": "title 2",
+    "dohe": false
+}
+
